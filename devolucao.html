@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Devolução - CME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .report-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .report-table th, .report-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .report-table th {
+            background-color: #f2f2f2;
+        }
+        .btn-export {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .btn-export:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Relatório de Devolução - CME</h1>
+    </header>
+
+    <div class="container">
+        <h2>Kit Cirúrgico - Relatório de Devolução</h2>
+
+        <table class="report-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Status</th>
+                    <th>Observações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bisturi - 1 unidade</td>
+                    <td>Conferido</td>
+                    <td>Sem danos</td>
+                </tr>
+                <tr>
+                    <td>Luvas Estéreis - 2 pares</td>
+                    <td>Conferido</td>
+                    <td>Sem danos</td>
+                </tr>
+                <tr>
+                    <td>Tesoura - 1 unidade</td>
+                    <td>Faltando</td>
+                    <td>Item perdido</td>
+                </tr>
+                <tr>
+                    <td>Compressas - 10 unidades</td>
+                    <td>Conferido</td>
+                    <td>Sem danos</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn-export">Exportar Relatório</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Separação - CME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checklist-item input {
+            margin-right: 10px;
+        }
+        .item-name {
+            flex-grow: 1;
+        }
+        .btn-concluir {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .btn-concluir:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checklist de Separação de Itens - CME</h1>
+    </header>
+
+    <div class="container">
+        <h2>Pedido: Kit Cirúrgico - Cirurgia Geral</h2>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="item1">
+            <div class="item-name">Bisturi - 1 unidade</div>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="item2">
+            <div class="item-name">Luvas Estéreis - 2 pares</div>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="item3">
+            <div class="item-name">Tesoura - 1 unidade</div>
+        </div>
+        <div class="checklist-item">
+            <input type="checkbox" id="item4">
+            <div class="item-name">Compressas - 10 unidades</div>
+        </div>
+
+        <button class="btn-concluir">Concluir Separação</button>
+    </div>
+</body>
+</html>
