@@ -4,78 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Sistema CME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
+            background-color:black;
             margin: 0;
             padding: 0;
+            color: #333;
         }
+
         header {
-            background-color: #333;
+            background: linear-gradient(90deg, #2196F3, #21CBF3);
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
         .container {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         /*    display: grid;
+            grid-template-columns: /* 2fr 1fr  *
+            gap: 20px; */
         }
+
+
         .card {
             background-color: white;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
+            width: 50%;
+            height: 100px;
+            margin: 50px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
         .card h2 {
-            margin: 0 0 10px;
+            font-size: 1.8rem;
+            margin: 0 0 15px;
+            color: #333;
         }
+
         .card p {
+            font-size: 1rem;
             color: #555;
-            margin: 10px 0;
+            margin: 0 0 20px;
         }
+
         .card a {
             text-decoration: none;
             color: white;
             background-color: #2196F3;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
         }
+
         .card a:hover {
             background-color: #1976D2;
+        }
+        footer{
+            background: linear-gradient(90deg, #2196F3, #21CBF3);
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sistema CME</h1>
+        <h1>MedTrack</h1>
         <p>Bem-vindo ao sistema de gerenciamento de Kits Cirúrgicos</p>
     </header>
     <div class="container">
-    <div class="card">
-        <h2>Checklist de Separação</h2>
-        <p>Realize o checklist para separação de itens cirúrgicos.</p>
-        <a href="separacao.html">Acessar Checklist</a>
-    </div>
-
-    <div class="card">
-        <h2>Conferência de Itens</h2>
-        <p>Faça a conferência dos itens na sala de cirurgia.</p>
-        <a href="conferencia.html">Acessar Conferência</a>
-    </div>
-    
+        <div class="card">
+            <h2>Checklist de Separação</h2>
+            <p>Realize o checklist para separação de itens cirúrgicos.</p>
+            <a href="separacao.html">Acessar Checklist</a>
+        </div>
+        <div class="card">
+            <h2>Conferência de Itens</h2>
+            <p>Faça a conferência dos itens na sala de cirurgia.</p>
+            <a href="conferencia.html">Acessar Conferência</a>
+        </div>
         <div class="card">
             <h2>Relatório de Devolução</h2>
             <p>Confira o status de devoluções de itens.</p>
             <a href="devolucao.html">Acessar Relatório</a>
         </div>
-
-
+        <div class="card">
+            <h2>Rastreio Individual</h2>
+            <p>Confira o status de onde estão os itens.</p>
+            <a href="rastreioIndividual.html">Acessar Relatório</a>
+        </div>
     </div>
+    <footer>
+        &copy; 2024,todosos direitos reservados para o Senac Rs
+    </footer>
 </body>
 </html>

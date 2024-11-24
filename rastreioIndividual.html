@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreamento de Material</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tracking-container {
+            background-color: #fff;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #ff5722;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #666;
+            margin: 5px 0 0;
+        }
+
+        .tracking-steps {
+            margin-top: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tracking-steps::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #ccc;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step .circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            flex-shrink: 0;
+            z-index: 1;
+        }
+
+        .step.completed .circle {
+            background-color: #ff5722;
+            border-color: #ff5722;
+        }
+
+        .step .details {
+            margin-left: 20px;
+        }
+
+        .step .details .status {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .step .details .timestamp {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .voltar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracking-container">
+        <div class="header">
+            <h1>Rastreamento de Material</h1>
+            <p>Material: Caixa de Instrumentos - Código #12345</p>
+        </div>
+        <div class="tracking-steps">
+            <div class="step completed">
+                <div class="circle"></div>
+                <div class="details">
+                    <div class="status">Recebido no Almoxarifado</div>
+                    <div class="timestamp">22/11/2024 - 08:30</div>
+                </div>
+            </div>
+            <div class="step completed">
+                <div class="circle"></div>
+                <div class="details">
+                    <div class="status">Preparação Concluída</div>
+                    <div class="timestamp">22/11/2024 - 10:00</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="circle"></div>
+                <div class="details">
+                    <div class="status">Em Transporte</div>
+                    <div class="timestamp">23/11/2024 - 14:45</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="circle"></div>
+                <div class="details">
+                    <div class="status">Entregue na Sala de Cirurgia</div>
+                    <div class="timestamp">Pendente</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

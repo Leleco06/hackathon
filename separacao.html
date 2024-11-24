@@ -20,6 +20,11 @@
         .container {
             width: 80%;
             margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
         }
         .checklist-item {
             display: flex;
@@ -53,6 +58,7 @@
 
     <div class="container">
         <h2>Pedido: Kit Cirúrgico - Cirurgia Geral</h2>
+        <ul>
 
         <div class="checklist-item">
             <input type="checkbox" id="item1">
@@ -70,6 +76,7 @@
             <input type="checkbox" id="item4">
             <div class="item-name">Compressas - 10 unidades</div>
         </div>
+        </ul>
 
         <button class="btn-concluir">Concluir Separação</button>
     </div>
